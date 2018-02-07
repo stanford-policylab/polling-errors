@@ -28,8 +28,8 @@ To reproduce the results, the R scripts should be run from `src/` directory.
 
 3. model_fit_data.R
     - Fits the Bayesian model to data using Stan
-    - Writes the fit object into `data/`
+    - Writes the fit objects into `data/`
 
 4. model_analyze_results.R
-    - Analysis for the results of the Bayesian model
+    - Analysis of the Bayesian model results
     - Generates figures 4, 5, and 6 in the paper

@@ -1,0 +1,62 @@
+**Data Description**
+Number of polls in primary dataset:	4221
+Number of polls from 538 in primary dataset:	4154
+Number of elections in primary dataset:	608
+Breakdown of poll numbers based on election type in primary dataset:
+   election_type    n
+1:    Senatorial 1646
+2: Gubernatorial 1079
+3:  Presidential 1496
+Breakdown of election numbers based on election type in primary dataset:
+   election_type   n
+1:    Senatorial 241
+2: Gubernatorial 188
+3:  Presidential 179
+Number of polls in auxiliary dataset:	7040
+Number of elections in auxiliary dataset:	314
+
+
+**Estimating Total Survey Error**
+RMSE of polls in different election types:
+   election_type rmse
+1:    Senatorial  3.7
+2: Gubernatorial  3.9
+3:  Presidential  2.5
+RMSE of SRS polls in different election types:
+   election_type rmse
+1:    Senatorial  2.0
+2:  Presidential  2.0
+3: Gubernatorial  2.1
+Percentage of polls that have the final result of election in their 95% confidence interval:
+   election_type in_ci_portion
+1:    Senatorial            73
+2: Gubernatorial            74
+3:  Presidential            88
+
+
+
+
+**Model Results**
+Average election-level absolute bias [percentage-points]:
+   election_type mu_b mu_b_sd
+1:    Senatorial  2.1   0.095
+2: Gubernatorial  2.3   0.099
+3:  Presidential  1.2   0.071
+Average election-level absolute bias [percentage-points] on election day:
+   election_type mu_b_0 mu_b_0_sd
+1:    Senatorial    2.0     0.129
+2: Gubernatorial    2.2     0.124
+3:  Presidential    1.2     0.076
+Average election-level standard deviation:
+   election_type mu_sigma mu_sigma_sd
+1:    Senatorial      2.8       0.067
+2: Gubernatorial      2.7       0.069
+3:  Presidential      2.2       0.039
+Average election-level absolute bias [percentage-points] for SRS:
+   avg_abs_election_level_bias avg_abs_elecion_level_elecitonday_bias
+1:                   0.1866667                                   0.16
+   avg_election_level_sd
+1:              2.066667
+Correlation between senatorial and presidential:	0.50
+Correlation between gubernatorial and senatorial:	0.45
+Correlation between gubernatorial and presidential:	0.39
